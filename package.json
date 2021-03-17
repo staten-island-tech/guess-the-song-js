@@ -1,0 +1,26 @@
+{
+  "name": "parcel-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "Alston Chan",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staten-island-tech/quizgame-alston.git"
+  },
+  "bugs": {
+    "url": "https://github.com/staten-island-tech/quizgame-alston/issues"
+  },
+  "homepage": "https://github.com/staten-island-tech/quizgame-alston#readme",
+  "description": ""
+}
