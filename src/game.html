@@ -1,0 +1,41 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="css/tailwind.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/56ad3a7b34.js" crossorigin="anonymous"></script>
+    <body class="bg-gray-700 flex items-center"> 
+        <div id="container-box" class="h-3/4 w-1/4 rounded-3xl overflow-hidden shadow-lg mx-auto my-12 bg-gray-200 flex flex-col">
+            <div id="heading-text" class="px-8 py-8 flex flex-row justify-around items-center">
+                <div class="flex flex-col items-center">
+                    <p class="font-bold text-gray-600 text-base text-lg">
+                        TRACK
+                    </p>
+                    <div class='inline-flex'>
+                        <span id="track">1</span>
+                    </div>
+                </div>
+                <div id="timer"></div>
+                <div class="flex flex-col items-center">
+                    <p class="font-bold text-gray-600 text-base text-lg">
+                        SCORE
+                    </p>
+                    <div class='inline-flex'>
+                        <span id="score">0</span>
+                    </div>
+                </div>
+            </div>
+            <p id="question" class="font-bold text-2xl text-gray-600 flex flex-col items-center mt-4 mb-8">Insert question here</p>
+            <div class="answer-buttons flex flex-col items-center">
+                <button class="font-bold text-white bg-yellow-500 hover:bg-yellow-600 duration-300 p-4 my-3 rounded-2xl w-3/4 shadow-lg" onclick="checkAnswer();"><span class="answer-text">Choice 1</span></button>
+                <button class="font-bold text-white bg-yellow-500 hover:bg-yellow-600 duration-300 p-4 my-2 rounded-2xl w-3/4 shadow-lg" onclick="checkAnswer();"><span class="answer-text">Choice 2</span></button>
+                <button class="font-bold text-white bg-yellow-500 hover:bg-yellow-600 duration-300 p-4 my-3 rounded-2xl w-3/4 shadow-lg" onclick="checkAnswer();"><span class="answer-text">Choice 3</span></button>
+                <button class="font-bold text-white bg-yellow-500 hover:bg-yellow-600 duration-300 p-4 my-3 rounded-2xl w-3/4 shadow-lg" onclick="checkAnswer();"><span class="answer-text">Choice 4</span></button>
+            </div>
+        </div>
+        <script src="./js/game.js"></script>
+    </body>
+</html>
