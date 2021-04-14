@@ -6,6 +6,7 @@
         <title>Quiz</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="css/tailwind.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <script src="https://kit.fontawesome.com/56ad3a7b34.js" crossorigin="anonymous"></script>
     <body class="bg-gray-700 flex items-center"> 
         <div id="container-box" class="h-3/4 w-1/4 rounded-3xl overflow-hidden shadow-lg mx-auto my-12 bg-gray-200 flex flex-col">
@@ -28,14 +29,16 @@
                     </div>
                 </div>
             </div>
+            <p id="timesup" class="animate__animated font-bold italic text-red-600 flex flex-col items-center"></p>
             <p id="question" class="font-bold text-2xl text-gray-600 flex flex-col items-center mt-4 mb-8">Insert question here</p>
             <div class="answer-buttons flex flex-col items-center">
-                <button class="font-bold text-white bg-yellow-500 hover:bg-yellow-600 duration-300 p-4 my-3 rounded-2xl w-3/4 shadow-lg" onclick="checkAnswer();"><span class="answer-text">Choice 1</span></button>
-                <button class="font-bold text-white bg-yellow-500 hover:bg-yellow-600 duration-300 p-4 my-2 rounded-2xl w-3/4 shadow-lg" onclick="checkAnswer();"><span class="answer-text">Choice 2</span></button>
-                <button class="font-bold text-white bg-yellow-500 hover:bg-yellow-600 duration-300 p-4 my-3 rounded-2xl w-3/4 shadow-lg" onclick="checkAnswer();"><span class="answer-text">Choice 3</span></button>
-                <button class="font-bold text-white bg-yellow-500 hover:bg-yellow-600 duration-300 p-4 my-3 rounded-2xl w-3/4 shadow-lg" onclick="checkAnswer();"><span class="answer-text">Choice 4</span></button>
+                <button class="animate__animated focus:outline-none font-bold text-white bg-yellow-500 hover:bg-yellow-600 duration-300 p-4 my-3 rounded-2xl w-3/4 shadow-lg"><p class="answers" data-number="1">Choice 1</p></button>
+                <button class="animate__animated focus:outline-none font-bold text-white bg-yellow-500 hover:bg-yellow-600 duration-300 p-4 my-2 rounded-2xl w-3/4 shadow-lg"><p class="answers" data-number="2">Choice 2</p></button>
+                <button class="animate__animated focus:outline-none font-bold text-white bg-yellow-500 hover:bg-yellow-600 duration-300 p-4 my-3 rounded-2xl w-3/4 shadow-lg"><p class="answers" data-number="3">Choice 3</p></button>
+                <button class="animate__animated focus:outline-none font-bold text-white bg-yellow-500 hover:bg-yellow-600 duration-300 p-4 my-3 rounded-2xl w-3/4 shadow-lg"><p class="answers" data-number="4">Choice 4</p></button>
             </div>
         </div>
+        <script src="/node_modules/soundmanager2/script/soundmanager2.js"></script>
         <script src="./js/game.js"></script>
     </body>
 </html>

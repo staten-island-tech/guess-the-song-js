@@ -4,16 +4,18 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
-    "build-prod": "parcel build src/index.html"
+    "build": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "Alston Chan",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^4.1.1",
     "autoprefixer": "^10.2.5",
     "parcel-bundler": "^1.12.5",
     "postcss": "^8.2.9",
     "sass": "^1.32.8",
+    "soundmanager2": "^2.97.20170602",
     "tailwindcss": "^2.0.4"
   },
   "dependencies": {},
