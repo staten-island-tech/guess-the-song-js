@@ -1,10 +1,10 @@
 {
   "name": "parcel-template",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "start": "dist/parcel src/index.html",
+    "build": "dist/parcel build src/index.html"
   },
   "keywords": [],
   "author": "Alston Chan",
