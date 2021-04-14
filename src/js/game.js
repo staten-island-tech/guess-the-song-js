@@ -285,7 +285,7 @@ function onTimesUp() {
   setTimeout(() => {
     reset();
     getNewQuestion();
-  }, 2000);
+  }, 1000);
 }
 
 function startTimer() {
@@ -397,14 +397,13 @@ function getNewQuestion() {
   availableQuestions.splice(questionsIndex, 1);
 }
 
-const normalBackground = "bg-yellow-500";
-const normalHover = "hover:bg-yellow-600";
-const correctBackground = "bg-green-600";
-const incorrectBackground = "bg-red-700";
-const correctAnimation = "animate__tada";
-const incorrectAnimation = "animate__shakeX";
-
 choices.forEach((choice) => {
+  const normalBackground = "bg-yellow-500";
+  const normalHover = "hover:bg-yellow-600";
+  const correctBackground = "bg-green-600";
+  const incorrectBackground = "bg-red-700";
+  const correctAnimation = "animate__tada";
+  const incorrectAnimation = "animate__shakeX";
   choice.addEventListener("click", (e) => {
     if (!acceptingAnswers) return;
 
@@ -458,9 +457,19 @@ incrementScore = (num) => {
 startGame();
 
 function scorePage() {
-  document.getElementsById("container-box").innerHTML = `
+  document.getElementById("body").innerHTML = `
   <div id="container-box" class="h-3/4 w-1/4 rounded-3xl overflow-hidden shadow-lg mx-auto my-12 bg-gray-200 flex flex-col">
-  <h1 class="font-bold text-4xl mb-2 pb-4">You scored a ${score}!</h1>
+    <h1 class="font-bold text-4xl mb-2 pb-4">You scored a ${score}!</h1>
+    <p class="text-gray-600 text-base text-lg">Timing matters! Wanna try again?</p>
+    <div id="start-buttons" class="flex flex-col items-center">
+      <button id="start-button" class="font-bold text-white bg-green-500 hover:bg-green-700 duration-300 p-4 my-3 rounded-2xl w-1/2 shadow-lg"><i class="fas fa-play fa-xs"></i>TRY AGAIN</button>
+    </div>
   </div>
   `;
+  document
+    .getElementById("body")
+    .classList.add("bg-gray-700", "flex", "items-center");
+  document.getElementById("start-button").onclick = function () {
+    location.href = "/src/game.html";
+  };
 }
