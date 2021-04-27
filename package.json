@@ -2,8 +2,8 @@
   "name": "parcel-template",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel src/index.html src/game.html",
-    "build": "parcel build src/index.html src/game.html"
+    "start": "parcel src/index.html ",
+    "build": "parcel build src/index.html "
   },
   "keywords": [],
   "author": "Alston Chan",
