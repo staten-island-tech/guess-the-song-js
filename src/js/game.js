@@ -462,9 +462,8 @@ function scorePage() {
     <h1 class="font-bold text-4xl mb-2 pb-4">You scored a ${score}!</h1>
     <p class="text-gray-600 text-base text-lg">Timing matters! Wanna try again?</p>
     <div id="start-buttons" class="flex flex-col items-center">
-      <button id="start-button" class="font-bold text-white bg-green-500 hover:bg-green-700 duration-300 p-4 my-3 rounded-2xl w-1/2 shadow-lg"><i class="fas fa-play fa-xs"></i>TRY AGAIN</button>
-    </div>
-  </div>
+                <button id="start-button" class="font-bold text-white bg-green-500 hover:bg-green-700 duration-300 p-4 my-3 rounded-2xl w-1/2 shadow-lg"><i class="fas fa-play fa-xs"></i>  <a href="game.html">START</a></button>
+            </div>
   `;
   document
     .getElementById("body")
